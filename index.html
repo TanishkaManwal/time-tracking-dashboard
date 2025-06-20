@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="script.js"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="start">
+        <img class="img" src="/time-tracking-dashboard-main/images/image-jeremy.png">
+        <h3>Report for</h3>
+        <h2>Jeremy<br>Robson</h2>
+      </div>
+      <div class="begin">
+        <h3 class="tab" data-period="daily">Daily</h3>
+        <h3 class="tab active" data-period="weekly">Weekly</h3>
+        <h3 class="tab" data-period="monthly">Monthly</h3>
+      </div>
+    </div>
+
+    <div class="cards">
+      <!-- Repeatable card structure -->
+      <!-- Work Card -->
+      <div class="card" 
+           data-daily-current="5hrs" 
+           data-daily-previous="Yesterday - 7hrs"
+           data-weekly-current="32hrs"
+           data-weekly-previous="Last Week - 36hrs"
+           data-monthly-current="103hrs"
+           data-monthly-previous="Last Month - 128hrs">
+        <div class="card-top work-bg"></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Work</h3>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="card-body">
+            <h1 class="current-hours">32hrs</h1>
+            <p class="previous-hours">Last Week - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Play Card -->
+      <div class="card"
+           data-daily-current="1hr"
+           data-daily-previous="Previous - 2hrs"
+           data-weekly-current="10hrs"
+           data-weekly-previous="Previous - 8hrs"
+           data-monthly-current="23hrs"
+           data-monthly-previous="Previous - 29hrs">
+        <div class="card-top play-bg"></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Play</h3>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="card-body">
+            <h1 class="current-hours">10hrs</h1>
+            <p class="previous-hours">Previous - 8hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Card -->
+      <div class="card"
+           data-daily-current="0hrs"
+           data-daily-previous="Previous - 1hr"
+           data-weekly-current="4hrs"
+           data-weekly-previous="Previous - 7hrs"
+           data-monthly-current="13hrs"
+           data-monthly-previous="Previous - 19hrs">
+        <div class="card-top study-bg"></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Study</h3>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="card-body">
+            <h1 class="current-hours">4hrs</h1>
+            <p class="previous-hours">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exercise Card -->
+      <div class="card"
+           data-daily-current="1hr"
+           data-daily-previous="Previous - 1hr"
+           data-weekly-current="4hrs"
+           data-weekly-previous="Previous - 5hrs"
+           data-monthly-current="11hrs"
+           data-monthly-previous="Previous - 18hrs">
+        <div class="card-top exercise-bg"></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Exercise</h3>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="card-body">
+            <h1 class="current-hours">4hrs</h1>
+            <p class="previous-hours">Previous - 5hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Card -->
+      <div class="card"
+           data-daily-current="1hr"
+           data-daily-previous="Previous - 3hrs"
+           data-weekly-current="5hrs"
+           data-weekly-previous="Previous - 10hrs"
+           data-monthly-current="21hrs"
+           data-monthly-previous="Previous - 23hrs">
+        <div class="card-top social-bg"></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Social</h3>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="card-body">
+            <h1 class="current-hours">5hrs</h1>
+            <p class="previous-hours">Previous - 10hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Self Care Card -->
+      <div class="card"
+           data-daily-current="0hrs"
+           data-daily-previous="Previous - 1hr"
+           data-weekly-current="2hrs"
+           data-weekly-previous="Previous - 2hrs"
+           data-monthly-current="7hrs"
+           data-monthly-previous="Previous - 11hrs">
+        <div class="card-top selfcare-bg"></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Self Care</h3>
+            <img src="images/icon-ellipsis.svg" />
+          </div>
+          <div class="card-body">
+            <h1 class="current-hours">2hrs</h1>
+            <p class="previous-hours">Previous - 2hrs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tanishka Manwal</a>.
+  </div>
+</body>
+</html>
